@@ -1,11 +1,27 @@
-body {
-  padding: 0;
-  margin: 0;
-  background-color: black;
-  color: white;
+.category-card {
+  @apply bg-white rounded-xl shadow p-8 text-center text-xl font-semibold cursor-pointer hover:shadow-lg transition;
 }
 
-.container {
-  padding: 100px;
-  text-align: center;
+.product-card {
+  @apply bg-gray-50 rounded-xl shadow p-4 text-center hover:shadow-lg transition;
+}
+
+.product-card img {
+  @apply mx-auto mb-4 rounded-lg;
+}
+
+.product-card h4 {
+  @apply font-semibold text-lg;
+}
+
+.product-card p {
+  @apply text-green-600 font-bold my-2;
+}
+
+.product-card button {
+  @apply bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700;
+}
+
+.info-card {
+  @apply bg-white rounded-xl p-8 text-xl font-semibold shadow;
 }

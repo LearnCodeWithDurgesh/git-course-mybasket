@@ -2,14 +2,141 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <title>MyBasket | Shop Smart</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <title>Document</title>
   </head>
-  <body>
-    <div class="container">
-      <h1>Welcome to my basket project</h1>
-    </div>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- NAVBAR -->
+    <nav class="bg-white shadow sticky top-0 z-50">
+      <div
+        class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold text-green-600">MyBasket</h1>
+
+        <input
+          type="text"
+          placeholder="Search products..."
+          class="hidden md:block w-96 px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-green-500"
+        />
+
+        <div class="flex items-center gap-4">
+          <button class="text-gray-600 hover:text-green-600">Login</button>
+          <button class="bg-green-600 text-white px-4 py-2 rounded-lg">
+            Cart 🛒
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="bg-gradient-to-r from-green-500 to-emerald-600 text-white">
+      <div class="max-w-7xl mx-auto px-6 py-24 text-center">
+        <h2 class="text-5xl font-bold mb-6">
+          Fresh Groceries Delivered Fast 🚀
+        </h2>
+        <p class="text-xl mb-8">
+          Order fruits, vegetables, dairy & more from MyBasket
+        </p>
+        <button
+          class="bg-white text-green-600 px-8 py-3 rounded-xl text-lg font-semibold hover:scale-105 transition"
+        >
+          Start Shopping
+        </button>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <h3 class="text-3xl font-bold mb-8 text-center">Shop by Category</h3>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+        <div class="category-card">🍎 Fruits</div>
+        <div class="category-card">🥦 Vegetables</div>
+        <div class="category-card">🥛 Dairy</div>
+        <div class="category-card">🍞 Bakery</div>
+      </div>
+    </section>
+
+    <!-- FEATURED PRODUCTS -->
+    <section class="bg-white py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <h3 class="text-3xl font-bold mb-10 text-center">Featured Products</h3>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+          <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Apple" />
+            <h4>Fresh Apples</h4>
+            <p>₹120 / kg</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Milk" />
+            <h4>Organic Milk</h4>
+            <p>₹60 / litre</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Bread" />
+            <h4>Brown Bread</h4>
+            <p>₹40</p>
+            <button>Add to Cart</button>
+          </div>
+
+          <div class="product-card">
+            <img src="https://via.placeholder.com/200" alt="Vegetables" />
+            <h4>Fresh Veggies</h4>
+            <p>₹80</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="bg-gray-100 py-16">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold mb-10">Why MyBasket?</h3>
+
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="info-card">⚡ Fast Delivery</div>
+          <div class="info-card">🥗 Fresh Products</div>
+          <div class="info-card">💰 Best Prices</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="bg-green-600 text-white py-16">
+      <div class="max-w-xl mx-auto px-6 text-center">
+        <h3 class="text-3xl font-bold mb-4">Get Offers in Your Inbox</h3>
+        <p class="mb-6">Subscribe to receive exclusive discounts</p>
+
+        <div class="flex gap-3">
+          <input
+            type="email"
+            placeholder="Enter your email"
+            class="flex-1 px-4 py-3 rounded-lg text-black"
+          />
+          <button class="bg-black px-6 py-3 rounded-lg">Subscribe</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-gray-400 py-10">
+      <div class="max-w-7xl mx-auto px-6 text-center">
+        <p>© 2026 MyBasket. All rights reserved.</p>
+      </div>
+    </footer>
+
     <script src="js/script.js"></script>
   </body>
 </html>
