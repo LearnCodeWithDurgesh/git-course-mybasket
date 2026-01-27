@@ -7,5 +7,89 @@
   </head>
   <body>
     <h1>Welcome to login page</h1>
+    <form
+      action="/login"
+      method="post"
+      class="login-form"
+      style="max-width: 360px; margin: 1rem 0"
+    >
+      <div style="margin-bottom: 0.75rem">
+        <label
+          for="email"
+          style="display: block; font-weight: 600; margin-bottom: 0.25rem"
+          >Email</label
+        >
+        <input
+          id="email"
+          name="email"
+          type="email"
+          required
+          autocomplete="username"
+          placeholder="you@example.com"
+          style="
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          "
+        />
+      </div>
+
+      <div style="margin-bottom: 0.75rem">
+        <label
+          for="password"
+          style="display: block; font-weight: 600; margin-bottom: 0.25rem"
+          >Password</label
+        >
+        <input
+          id="password"
+          name="password"
+          type="password"
+          required
+          autocomplete="current-password"
+          placeholder="Enter your password"
+          style="
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          "
+        />
+      </div>
+
+      <div
+        style="
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 0.75rem;
+          font-size: 0.9rem;
+        "
+      >
+        <label style="display: flex; align-items: center">
+          <input type="checkbox" name="remember" style="margin-right: 0.5rem" />
+          Remember me
+        </label>
+        <a href="/forgot" style="color: #0066cc; text-decoration: none"
+          >Forgot?</a
+        >
+      </div>
+
+      <button
+        type="submit"
+        style="
+          width: 100%;
+          padding: 0.6rem;
+          border: none;
+          border-radius: 4px;
+          background: #0066cc;
+          color: #fff;
+          font-weight: 600;
+          cursor: pointer;
+        "
+      >
+        Sign in
+      </button>
+    </form>
   </body>
 </html>
